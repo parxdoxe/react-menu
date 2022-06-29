@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -12,7 +13,7 @@ const Header = () => {
 
     return (
         <header>
-            <h1>Découvrez notre <div className='skew'>menu.</div></h1>
+            <h1>Découvrez notre <div className='skew'><Link to="/">menu.</Link></div></h1>
             <div className="onglet">
                 <button value="all" onClick={() => handleChange(1)} className={isActive === 1 ? "active" : ""}>Tout</button>
                 <button value="meat" onClick={() => handleChange(2)} className={isActive === 2 ? "active" : ""}>Viandes</button>
