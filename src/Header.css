@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    display: flex;
+    width: 60%;
+    color: #243e63;
+}
+
+.skew {
+    background-color: #6415ff;
+    transform: skewX(-15deg);
+    padding: 0 5px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.onglet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: #e8eaee;
+    padding: 5px;
+}
+
+.onglet button {
+    cursor: pointer;
+    border: transparent;
+    margin-right: 5px;
+    padding: 10px 17px;
+    border-radius: 5px;
+}
+
+button.active{
+    background-color: #6415ff;
+    color: #fff;
+}
