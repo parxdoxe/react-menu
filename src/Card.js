@@ -17,10 +17,10 @@ const Card = ({meal}) => {
     const addToStorage = () => {
         let storedData = window.localStorage.meals ? window.localStorage.meals.split(",") : []
 
-        if (!storedData.includes(meal.title.toString())) {
+        
             storedData.push(meal.title, meal.imageSrc)
             window.localStorage.meal = storedData
-           }
+           
     }
 
     return (
